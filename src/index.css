@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f2eee4;
+  --color-paper-dark: #f7f4ec;
+  --color-paper-muted: #e4ddc9;
+  --color-ink: #2e2f29;
+  --color-ink-soft: #5c5b50;
+  --color-ink-muted: #6b6a5e;
+  --color-moss: #6f5a2f;
+  --color-line: #ddd6c4;
+  --color-line-strong: #b5ac91;
+
+  --font-display: 'Fraunces', serif;
+  --font-body: 'IBM Plex Sans', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+body {
+  background-color: var(--page-bg, white);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+}
+
+.print-area {
+  background-color: transparent;
+}
+
+.cal-bg {
+  background-color: var(--cal-bg);
+}
+
+.cal-bg-header {
+  background-color: color-mix(in srgb, var(--cal-bg), white 15%);
+}
+
+.cal-bg-muted {
+  background-color: color-mix(in srgb, var(--cal-bg), black 8%);
+}
+
+.cal-text {
+  color: var(--cal-ink);
+}
+
+.cal-text-soft {
+  color: var(--cal-ink-soft);
+}
+
+.cal-text-muted {
+  color: var(--cal-ink-muted);
+}
+
+.cal-hoverable:hover {
+  color: var(--cal-ink);
+}
+
+.cal-accent-text {
+  color: var(--cal-accent);
+}
+
+.cal-quote {
+  quotes: "\201C" "\201D";
+}
+
+.cal-quote::before,
+.cal-quote::after {
+  color: var(--cal-accent);
+}
+
+.cal-accent-border {
+  border-color: var(--cal-accent);
+}
+
+.cal-frame {
+  border: 1.5px solid var(--cal-accent);
+  padding: 16px;
+}
+
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+  ::placeholder {
+    color: transparent !important;
+  }
+  body {
+    background-color: var(--page-bg, white);
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-area {
+    box-shadow: none !important;
+    border: none !important;
+  }
+}
