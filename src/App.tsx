@@ -58,6 +58,7 @@ export default function App() {
     document.documentElement.style.setProperty("--cal-ink", palette.ink);
     document.documentElement.style.setProperty("--cal-ink-soft", palette.soft);
     document.documentElement.style.setProperty("--cal-ink-muted", palette.muted);
+    document.documentElement.style.setProperty("--cal-line", settings.lineColor);
   }, [settings]);
 
   return (

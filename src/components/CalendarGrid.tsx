@@ -43,7 +43,7 @@ export default function CalendarGrid({
       <p className="cal-text mb-2 hidden font-display text-2xl font-medium capitalize print:block">
         {format(currentDate, "MMMM yyyy", { locale: es })}
       </p>
-      <div className="grid grid-cols-7 gap-px bg-line">
+      <div className="grid grid-cols-7 gap-px cal-line">
         {labels.map((label) => (
           <div
             key={label}

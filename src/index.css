@@ -39,6 +39,10 @@ body {
   background-color: color-mix(in srgb, var(--cal-bg), black 8%);
 }
 
+.cal-line {
+  background-color: var(--cal-line);
+}
+
 .cal-text {
   color: var(--cal-ink);
 }

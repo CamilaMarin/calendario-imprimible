@@ -4,6 +4,7 @@ export interface CalendarSettings {
   bgColor: string;
   pageBgColor: string;
   accentColor: string;
+  lineColor: string;
   fillMode: "relleno" | "marco";
 }
 
@@ -11,6 +12,7 @@ export const defaultSettings: CalendarSettings = {
   bgColor: "#f2eee4",
   pageBgColor: "#ffffff",
   accentColor: "#6f5a2f",
+  lineColor: "#ddd6c4", 
   fillMode: "relleno",
 };
 
