@@ -30,6 +30,16 @@ export default function SettingsPanel({ settings, onChange, onReset }: Props) {
       </label>
 
       <label className="flex items-center gap-2">
+        Color de líneas
+        <input
+          type="color"
+          value={settings.lineColor}
+          onChange={(e) => onChange("lineColor", e.target.value)}
+          className="h-7 w-7 cursor-pointer border border-line-strong bg-transparent p-0"
+        />
+      </label>
+
+      <label className="flex items-center gap-2">
         Acento
         <input
           type="color"
