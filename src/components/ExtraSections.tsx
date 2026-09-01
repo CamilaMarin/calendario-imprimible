@@ -48,7 +48,7 @@ export default function ExtraSections({
         {sections.map((section) => (
           <div
             key={section.id}
-            className={`cal-bg-header group relative border border-line p-4 ${
+            className={`cal-bg-header group relative border cal-line-border p-4 ${
               section.width === "ancho" ? "sm:col-span-2" : ""
             }`}
           >

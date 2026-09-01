@@ -39,10 +39,6 @@ body {
   background-color: color-mix(in srgb, var(--cal-bg), black 8%);
 }
 
-.cal-line {
-  background-color: var(--cal-line);
-}
-
 .cal-text {
   color: var(--cal-ink);
 }
@@ -74,6 +70,14 @@ body {
 
 .cal-accent-border {
   border-color: var(--cal-accent);
+}
+
+.cal-line {
+  background-color: var(--cal-line);
+}
+
+.cal-line-border {
+  border-color: var(--cal-line);
 }
 
 .cal-frame {

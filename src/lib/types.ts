@@ -12,7 +12,7 @@ export const defaultSettings: CalendarSettings = {
   bgColor: "#f2eee4",
   pageBgColor: "#ffffff",
   accentColor: "#6f5a2f",
-  lineColor: "#ddd6c4", 
+  lineColor: "#ddd6c4",
   fillMode: "relleno",
 };
 
