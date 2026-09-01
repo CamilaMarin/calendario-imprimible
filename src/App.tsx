@@ -55,10 +55,10 @@ export default function App() {
     document.documentElement.style.setProperty("--page-bg", settings.pageBgColor);
     document.documentElement.style.setProperty("--cal-bg", effectiveCalBg);
     document.documentElement.style.setProperty("--cal-accent", settings.accentColor);
+    document.documentElement.style.setProperty("--cal-line", settings.lineColor);
     document.documentElement.style.setProperty("--cal-ink", palette.ink);
     document.documentElement.style.setProperty("--cal-ink-soft", palette.soft);
     document.documentElement.style.setProperty("--cal-ink-muted", palette.muted);
-    document.documentElement.style.setProperty("--cal-line", settings.lineColor);
   }, [settings]);
 
   return (

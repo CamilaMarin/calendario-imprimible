@@ -13,7 +13,7 @@ export default function PrioritiesBlock({ priorities, onUpdate }: Props) {
             value={text}
             onChange={(e) => onUpdate(i, e.target.value)}
             placeholder="..."
-            className="cal-text w-full border-b border-line bg-transparent pb-1 text-sm outline-none"
+            className="cal-text w-full border-b cal-line-border bg-transparent pb-1 text-sm outline-none"
           />
         </div>
       ))}

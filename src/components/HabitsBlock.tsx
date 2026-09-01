@@ -28,7 +28,7 @@ export default function HabitsBlock({
             {days.map((d) => (
               <th
                 key={d}
-                className="cal-text-muted h-5 w-5 border border-line font-mono text-[9px] font-normal"
+                className="cal-text-muted h-5 w-5 border cal-line-border font-mono text-[9px] font-normal"
               >
                 {d}
               </th>
@@ -59,7 +59,7 @@ export default function HabitsBlock({
                 <td
                   key={i}
                   onClick={() => onToggleDay(habit.id, i)}
-                  className={`h-5 w-5 cursor-pointer border border-line text-center ${
+                  className={`h-5 w-5 cursor-pointer border cal-line-border text-center ${
                     done ? "cal-bg-muted" : ""
                   }`}
                 >

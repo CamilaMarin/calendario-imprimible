@@ -22,7 +22,7 @@ export default function DayCell({
 
   return (
     <div
-      className={`flex min-h-[90px] flex-col border border-line p-2 print:min-h-[80px] ${
+      className={`flex min-h-[90px] flex-col border cal-line-border p-2 print:min-h-[80px] ${
         isCurrentMonth ? "cal-bg" : "cal-bg-muted"
       } ${template === "color" && isToday ? "cal-accent-border" : ""}`}
     >
